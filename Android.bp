@@ -1,0 +1,15 @@
+cc_library_shared {
+    name: "libsocketcan",
+    srcs: ["libsocketcan.c"],
+    local_include_dirs: ["include"],
+    export_include_dirs: ["include"],
+    cflags: [
+        "-O2",
+        "-g",
+        "-W",
+        "-Wall",
+        "-Wno-pointer-arith",
+        "-Wno-sign-compare",
+        "-Werror",
+    ],
+}
